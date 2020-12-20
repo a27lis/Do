@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relative"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ThingsActivity"
+    android:orientation="vertical"
+    android:background="@color/colorPrimaryDark">
+
+    <TextView
+        android:id="@+id/textUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blueImageView"
+        android:text="EXAMPLE"
+        android:textSize="25dp"
+        android:gravity="center"
+        android:textColor="@color/colorAccent"
+        android:padding="5dp"/>
+
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/thingsRecycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="vertical"
+            android:background="@color/colorPrimaryDark"
+            android:layout_below="@+id/textUp">
+
+        </androidx.recyclerview.widget.RecyclerView>
+    
+    <TextView
+        android:id="@+id/nothingToDo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="Nothing to do"
+        android:visibility="visible"/>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/colorPrimaryDark"
+            android:layout_alignParentBottom="true">
+
+
+            <EditText
+                android:id="@+id/editText"
+                android:layout_width="0dp"
+                android:layout_weight="5"
+                android:layout_height="wrap_content"
+                android:hint="Write right here"
+                android:inputType="textPersonName"
+                android:layout_gravity="bottom" />
+
+            <Button
+                android:id="@+id/floatingActionButton"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/ic_baseline_add_circle_24"
+                android:clickable="true"
+                android:onClick="addThing"
+                android:layout_gravity="bottom" />
+
+        </LinearLayout>
+
+
+
+
+</RelativeLayout>

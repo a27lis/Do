@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="back">#FEFEFE</color>
+    <color name="colorAccent">#344955</color>
+    <color name="greenImageView">#F9AA33</color>
+    <color name="yellowImageView">#F9AA33</color>
+    <color name="blueImageView">#F9AA33</color>
+    <color name="darkBlueImageView">#F9AA33</color>
+    <color name="colorPrimary">#344955</color>
+    <color name="primaryLightColor">#e7b9ff</color>
+    <color name="colorPrimaryDark">#D2DBE0</color>
+    <color name="primaryTextColor">#000000</color>
+    <color name="delete">#c62828</color>
+    <color name="text">#232F34</color>
+</resources>
